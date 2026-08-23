@@ -35,13 +35,12 @@ Agentic development is still a relatively new field, but many useful articles an
 
 ## 4. Context Engineering
 
-- What is Context Engineering?
-- Context Window
-- Context Selection
-- Context Compression
-- Context Isolation
-- Managing Tool Context
-- Context vs. Memory vs. Knowledge
+- [What is Context Engineering?](./04-context/01-what-is-context-engineering.md)
+- [Context Window](./04-context/02-context-window.md)
+- [Context Selection](./04-context/03-context-selection.md)
+- [Context Compression](./04-context/04-context-compression.md)
+- [Context Isolation](./04-context/05-context-isolation.md)
+- [Context vs. Memory vs. Knowledge](./04-context/06-context-memory-knowledge.md)
 
 ## 5. Knowledge & RAG
 
