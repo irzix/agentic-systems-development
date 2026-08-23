@@ -44,13 +44,13 @@ Agentic development is still a relatively new field, but many useful articles an
 
 ## 5. Knowledge & RAG
 
-- How does RAG work?
-- RAG Strategies
-- Chunking Strategies
-- Retrieval Strategies
-- Reranking
-- RAG Trade-offs
-- RAG Optimization
+- [What is RAG and How It Works?](./05-rag/01-what-is-rag.md)
+- [Chunking Strategies](./05-rag/02-chunking-strategies.md)
+- [Query Transformations](./05-rag/03-query-transformations.md)
+- [Retrieval & Hybrid Search](./05-rag/04-retrieval-and-search.md)
+- [Reranking & Compression](./05-rag/05-reranking-and-compression.md)
+- [Agentic RAG](./05-rag/06-agentic-rag.md)
+- [RAG Trade-offs & Optimization](./05-rag/07-rag-tradeoffs.md)
 
 ## 6. Memory & Experience
 
