@@ -40,10 +40,8 @@ Agentic development is still a relatively new field, but many useful articles an
 - Context Selection
 - Context Compression
 - Context Isolation
-- Context Management
 - Managing Tool Context
 - Context vs. Memory vs. Knowledge
-- Context Growth and Optimization
 
 ## 5. Knowledge & RAG
 
