@@ -44,7 +44,7 @@ Agentic development is still a relatively new field, but many useful articles an
 
 ## 5. Knowledge & RAG
 
-- [What is RAG and How It Works?](./05-rag/01-what-is-rag.md)
+- [What is RAG?](./05-rag/01-what-is-rag.md)
 - [Chunking Strategies](./05-rag/02-chunking-strategies.md)
 - [Query Transformations](./05-rag/03-query-transformations.md)
 - [Retrieval & Hybrid Search](./05-rag/04-retrieval-and-search.md)
