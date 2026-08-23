@@ -54,14 +54,12 @@ Agentic development is still a relatively new field, but many useful articles an
 
 ## 6. Memory & Experience
 
-- Short-term Memory
-- Long-term Memory
-- Semantic Memory
-- Episodic Memory
-- Procedural Memory
-- Experience
-- Reflection
-- Human Feedback
+- [Short-term vs. Long-term Memory](./06-memory/01-short-term-vs-long-term-memory.md)
+- [Semantic Memory](./06-memory/02-semantic-memory.md)
+- [Episodic Memory](./06-memory/03-episodic-memory.md)
+- [Procedural Memory](./06-memory/04-procedural-memory.md)
+- [Reflection & Experience](./06-memory/05-reflection-and-experience.md)
+- [Human Feedback & Memory](./06-memory/06-human-feedback-and-memory.md)
 
 ## 7. Reliability
 
