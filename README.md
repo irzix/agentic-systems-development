@@ -6,13 +6,15 @@ Agentic development is still a relatively new field, but many useful articles an
 
 ## 1. Foundations
 
-- [How do LLMs work?](./01-foundation/01-how-llm-works.md)
-- [What is an Agent?](./01-foundation/02-what-is-agent.md)
-- [What is State?](./01-foundation/03-what-is-state.md)
-- [What is Memory?](./01-foundation/04-what-is-memory.md)
-- [What is Knowledge?](./01-foundation/05-what-is-knowledge.md)
-- [What is a Chunk?](./01-foundation/06-what-is-chunk.md)
-- [What is the Agent Lifecycle?](./01-foundation/07-what-is-agent-lifecycle.md)
+- [How do LLMs work? (From ML to Reasoning)](./01-foundation/01-how-llm-works.md)
+- [Logits, Softmax & Decoding Strategies](./01-foundation/02-logits-softmax-and-sampling.md)
+- [What is an Agent?](./01-foundation/03-what-is-agent.md)
+- [The Agent-Environment Loop](./01-foundation/04-agent-environment-loop.md)
+- [What is State?](./01-foundation/05-what-is-state.md)
+- [What is Memory?](./01-foundation/06-what-is-memory.md)
+- [What is Knowledge?](./01-foundation/07-what-is-knowledge.md)
+- [Deterministic vs. Probabilistic Systems](./01-foundation/08-deterministic-vs-probabilistic.md)
+- [What is the Agent Lifecycle?](./01-foundation/09-what-is-agent-lifecycle.md)
 
 ## 2. Tools & Actions
 
