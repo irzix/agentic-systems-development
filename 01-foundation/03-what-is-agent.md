@@ -52,15 +52,35 @@ In modern software engineering (2025/2026), AI automation exists on a spectrum o
 As Anthropic highlighted in their landmark guide *Building Effective Agents*, the defining line between a Workflow and an Agent comes down to a single question: **Who decides what happens next?**
 
 ```
-WORKFLOW (Developer-Controlled Flow):
-[Input] ──► [Step 1: Extract] ──► [Step 2: Classify] ──► [If Bug -> JIRA API] ──► [Done]
-                                                     └──► [If Question -> Slack]
+WORKFLOW: Developer-Controlled Path (Deterministic DAG)
+┌───────┐      ┌────────────────┐      ┌─────────────────┐      ┌───────────────┐
+│ Input ├─────►│ Step 1: LLM    ├─────►│ Step 2: Code    ├──┬──►│ Route A: JIRA │
+└───────┘      │ Extraction     │      │ Classification  │  │   └───────────────┘
+               └────────────────┘      └─────────────────┘  └──►│ Route B: Slack│
+                                                                └───────────────┘
 
-AGENT (Model-Controlled Flow):
-[Goal] ──► ┌─► [Reason: Decide Next Step]
-           │   [Act: Call Tool]
-           │   [Observe: Inspect Result]
-           └── [Evaluate: Is Goal Done? No? Repeat] ──► [Yes: Done]
+AGENT: Model-Controlled Loop (Dynamic Autonomy)
+┌───────┐      ┌──────────────────────────────────────────────┐
+│ Goal  ├─────►│ 1. REASON: LLM assesses context & goal       │
+└───────┘      └──────────────────────┬───────────────────────┘
+                                      │ Chooses Tool
+                                      ▼
+               ┌──────────────────────────────────────────────┐
+               │ 2. ACT: Environment executes Tool / API      │
+               └──────────────────────┬───────────────────────┘
+                                      │ Tool Output
+                                      ▼
+               ┌──────────────────────────────────────────────┐
+               │ 3. OBSERVE: Agent inspects result            │
+               └──────────────────────┬───────────────────────┘
+                                      │
+                         /────────────┴────────────\
+                        <  Is Objective Completed?  >
+                         \────────────┬────────────/
+                        No (Repeat)   │   Yes (Finish)
+               ┌──────────────────────┘   │
+               │                          ▼
+               └─────────────────────► [🏁 Done]
 ```
 
 ### Comparison Matrix

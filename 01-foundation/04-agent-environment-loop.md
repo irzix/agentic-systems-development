@@ -11,25 +11,34 @@ Understanding the **Agent-Environment Loop** is the bridge between pure LLM prom
 Originating in cybernetics and reinforcement learning, every autonomous agent operates on a continuous feedback loop:
 
 ```
-                  ┌────────────────────────┐
-                  │       ENVIRONMENT      │
-                  │ (Filesystem, Web, API) │
-                  └───────────┬────────────┘
-                              │
-               Observation    │    Action
-               (Perception)   │    (Actuation)
-                              │
-                              ▼
-                  ┌────────────────────────┐
-                  │      AGENT SYSTEM      │
-                  │ ┌────────────────────┐ │
-                  │ │ State & Memory     │ │
-                  │ └─────────┬──────────┘ │
-                  │           ▼            │
-                  │ ┌────────────────────┐ │
-                  │ │ LLM Reasoning      │ │
-                  │ └────────────────────┘ │
-                  └────────────────────────┘
+                       ┌──────────────────────────────┐
+                       │          ENVIRONMENT         │
+                       │ (Filesystem, Database, APIs) │
+                       └──────────────┬───────────────┘
+                                      │
+                         Observation  │  Action / Tool Call
+                         (Perception) │  (Actuation)
+                                      │
+            ┌─────────────────────────┴─────────────────────────┐
+            │                                                   ▲
+            │  State Change / Output               Tool Payload │
+            ▼                                                   │
+    ╔═══════════════════════════════════════════════════════════╧═══════════╗
+    ║                           AI AGENT SYSTEM                             ║
+    ║                                                                       ║
+    ║   ┌────────────────────────┐             ┌────────────────────────┐   ║
+    ║   │ SENSORS / PARSER       │             │ REASONING ENGINE       │   ║
+    ║   │ • Reads stdout/stderr  ├────────────►│ • Decides next step    │   ║
+    ║   │ • Parses JSON returns  │  Context    │ • Evaluates progress   │   ║
+    ║   └────────────────────────┘             └───────────┬────────────┘   ║
+    ║                                                      │                ║
+    ║                                                      ▼                ║
+    ║   ┌────────────────────────┐             ┌────────────────────────┐   ║
+    ║   │ WORKING STATE          │             │ ACTUATORS / DISPATCHER │   ║
+    ║   │ • In-memory variables  │◄────────────┤ • Emits tool arguments │   ║
+    ║   │ • Execution step count │  Updates    │ • Invokes MCP server   │   ║
+    ║   └────────────────────────┘             └────────────────────────┘   ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
 ```
 
 1. **Perception (Observation):** The agent receives signals or data from the environment.
