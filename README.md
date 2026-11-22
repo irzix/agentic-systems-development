@@ -4,6 +4,10 @@ In this repository, I'm going to explain the fundamentals of agent development u
 My goal is to create easy-to-follow learning content and videos based on practical examples, covering a complete series on agent development. The goal is to help programmers understand how to build agentic systems and make the right engineering trade-offs.
 Agentic development is still a relatively new field, but many useful articles and resources have already been published. Throughout this repository, I'll try to reference relevant resources and research as I build and explain each topic.
 
+## Reference Books
+
+[Selected books](./resources/books/README.md) on LLM engineering, planning and multi-agent systems, with suggested chapters and official links.
+
 ## 1. Foundations
 
 - [How do LLMs work? (From ML to Reasoning)](./01-foundation/01-how-llm-works.md)
