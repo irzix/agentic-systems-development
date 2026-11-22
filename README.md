@@ -16,138 +16,65 @@ Agentic development is still a relatively new field, but many useful articles an
 - [Deterministic vs. Probabilistic Systems](./01-foundation/08-deterministic-vs-probabilistic.md)
 - [What is the Agent Lifecycle?](./01-foundation/09-what-is-agent-lifecycle.md)
 
-## 2. Tools & Actions
+## 2. Tools & MCP (Model Context Protocol)
 
-- [How does Tool Calling work?](./02-tools/01-what-is-tool-call.md)
-- [What is MCP and how does it work?](./02-tools/02-how-mcp-works.md)
-- [Tool Calling vs. MCP](./02-tools/03-tool-vs-mcp.md)
-- [Tool Design & Schemas](./02-tools/04-tool-design.md)
-- [MCP Discovery](./02-tools/05-mcp-discovery.md)
+- [How Tool Calling Works (Function Schemas & JSON Output)](./02-tools-and-mcp/01-what-is-tool-call.md)
+- [What is MCP and How Does It Work?](./02-tools-and-mcp/02-how-mcp-works.md)
+- [Native Tool Calling vs. MCP Architecture](./02-tools-and-mcp/03-tool-vs-mcp.md)
+- [Tool Design, Schemas & Idempotency](./02-tools-and-mcp/04-tool-design.md)
+- [MCP Discovery & Dynamic Registration](./02-tools-and-mcp/05-mcp-discovery.md)
+- [Sandboxed Code Execution (Docker, E2B & Wasm)](./02-tools-and-mcp/06-sandboxed-execution.md)
 
+## 3. Context Engineering
 
-## 3. Agent Architecture
+- [What is Context Engineering?](./03-context-engineering/01-what-is-context-engineering.md)
+- [Context Window & The "Lost in the Middle" Effect](./03-context-engineering/02-context-window.md)
+- [Prompt Caching Mechanics (Anthropic & OpenAI)](./03-context-engineering/03-prompt-caching.md)
+- [Context Selection & Filtering](./03-context-engineering/04-context-selection.md)
+- [Context Compression & Compaction Strategies](./03-context-engineering/05-context-compression.md)
+- [Context Isolation & Security](./03-context-engineering/06-context-isolation.md)
 
-- [What is Agent Architecture?](./03-agent-architecture/01-what-is-agent-architecture.md)
-- [Agent State](./03-agent-architecture/02-agent-state.md)
-- [Agent Context](./03-agent-architecture/03-agent-context.md)
-- [Agent Memory](./03-agent-architecture/04-agent-memory.md)
-- [Agent Orchestration](./03-agent-architecture/05-agent-orchestration.md)
-- [Single-Agent vs. Multi-Agent](./03-agent-architecture/06-what-is-multi-agent.md)
-- [Common Agent Architectures](./03-agent-architecture/07-common-architectures.md)
+## 4. Knowledge & Agentic RAG
 
-## 4. Context Engineering
+- [What is RAG? (Parametric vs. Non-Parametric)](./04-knowledge-and-rag/01-what-is-rag.md)
+- [Chunking Strategies (Fixed vs. Semantic Chunking)](./04-knowledge-and-rag/02-chunking-strategies.md)
+- [Query Transformations (Multi-Query, HyDE & Step-Back)](./04-knowledge-and-rag/03-query-transformations.md)
+- [Retrieval & Hybrid Search (BM25 + Dense Vectors)](./04-knowledge-and-rag/04-retrieval-and-search.md)
+- [Reranking & Context Compression (Cross-Encoders)](./04-knowledge-and-rag/05-reranking-and-compression.md)
+- [Agentic RAG & GraphRAG (Dynamic Routing & Knowledge Graphs)](./04-knowledge-and-rag/06-agentic-rag.md)
+- [RAG Trade-offs & Production Optimization](./04-knowledge-and-rag/07-rag-tradeoffs.md)
 
-- [What is Context Engineering?](./04-context/01-what-is-context-engineering.md)
-- [Context Window](./04-context/02-context-window.md)
-- [Context Selection](./04-context/03-context-selection.md)
-- [Context Compression](./04-context/04-context-compression.md)
-- [Context Isolation](./04-context/05-context-isolation.md)
-- [Context vs. Memory vs. Knowledge](./04-context/06-context-memory-knowledge.md)
+## 5. Memory Systems & Experience
 
-## 5. Knowledge & RAG
+- [Short-term vs. Long-term Memory](./05-memory-systems/01-short-term-vs-long-term-memory.md)
+- [Semantic Memory (User Facts & Preferences)](./05-memory-systems/02-semantic-memory.md)
+- [Episodic Memory (Task Histories & Past Trajectories)](./05-memory-systems/03-episodic-memory.md)
+- [Procedural Memory (Rules, Tools & Instructions)](./05-memory-systems/04-procedural-memory.md)
+- [Reflection & Experience (The Reflexion Framework)](./05-memory-systems/05-reflection-and-experience.md)
+- [Modern Memory Engines (Mem0, LangGraph Store & Zep)](./05-memory-systems/06-modern-memory-engines.md)
 
-- [What is RAG?](./05-rag/01-what-is-rag.md)
-- [Chunking Strategies](./05-rag/02-chunking-strategies.md)
-- [Query Transformations](./05-rag/03-query-transformations.md)
-- [Retrieval & Hybrid Search](./05-rag/04-retrieval-and-search.md)
-- [Reranking & Compression](./05-rag/05-reranking-and-compression.md)
-- [Agentic RAG](./05-rag/06-agentic-rag.md)
-- [RAG Trade-offs & Optimization](./05-rag/07-rag-tradeoffs.md)
+## 6. Agent Architectures & Multi-Agent Systems
 
-## 6. Memory & Experience
+- [What is Agent Architecture?](./06-agent-architectures/01-what-is-agent-architecture.md)
+- [ReAct Pattern Deep Dive](./06-agent-architectures/02-react-pattern.md)
+- [Plan-and-Execute Architecture](./06-agent-architectures/03-plan-and-execute.md)
+- [Evaluator-Optimizer & Self-Correction Loops](./06-agent-architectures/04-evaluator-optimizer.md)
+- [Agent Orchestration (StateGraphs & Routers)](./06-agent-architectures/05-agent-orchestration.md)
+- [Multi-Agent Supervisors & Hierarchical Delegation](./06-agent-architectures/06-multi-agent-supervisors.md)
+- [Multi-Agent Swarms & Peer-to-Peer Collaboration](./06-agent-architectures/07-multi-agent-swarms.md)
 
-- [Short-term vs. Long-term Memory](./06-memory/01-short-term-vs-long-term-memory.md)
-- [Semantic Memory](./06-memory/02-semantic-memory.md)
-- [Episodic Memory](./06-memory/03-episodic-memory.md)
-- [Procedural Memory](./06-memory/04-procedural-memory.md)
-- [Reflection & Experience](./06-memory/05-reflection-and-experience.md)
-- [Human Feedback & Memory](./06-memory/06-human-feedback-and-memory.md)
+## 7. Reliability, Security & Guardrails
 
-## 7. Reliability
+- [Agent Failure Modes & Resilient Error Recovery](./07-reliability-and-guardrails/01-failure-modes-and-recovery.md)
+- [Transactional Safety, Database Locks & Idempotency](./07-reliability-and-guardrails/02-transactional-safety-idempotency.md)
+- [Human-in-the-Loop (HITL) Interruption Patterns](./07-reliability-and-guardrails/03-human-in-the-loop.md)
+- [Prompt Injection & Untrusted Tool Outputs](./07-reliability-and-guardrails/04-security-and-prompt-injection.md)
+- [Production Guardrail Frameworks (NeMo & Guardrails AI)](./07-reliability-and-guardrails/05-guardrail-frameworks.md)
 
-- Agent Failure Modes
-- Retry
-- Idempotency
-- Timeout
-- Caching
-- Agent Failure Recovery
-- Deterministic vs. Probabilistic Behavior
-- Human-in-the-Loop (HITL)
+## 8. Evaluation & Operations (AgentOps)
 
-## 8. Multi-Agent Systems
-
-- Why Multiple Agents?
-- Agent Delegation
-- Agent Communication
-- Supervisor Pattern
-- Specialist Agents
-- Parallel Agents
-- Multi-Agent Workflows
-- Trade-offs of Multi-Agent Systems
-
-## 9. Evaluation
-
-- Why is Agent Evaluation Different?
-- Step-level Evaluation
-- Final Evaluation
-- Tool-call Evaluation
-- Trajectory Evaluation
-- LLM-as-a-Judge
-- Evaluation Datasets
-- Human Evaluation
-- Regression Testing
-
-## 10. Observability
-
-- Agent Observability
-- Tracing
-- Logging
-- Metrics
-- Token Monitoring
-- Cost Monitoring
-- Agent Performance Monitoring
-
-## 11. Security & Guardrails
-
-- Prompt Injection
-- Tool Permissions
-- Agent Authorization
-- Data Leakage
-- Untrusted Tool Output
-- Guardrails
-- Input Validation
-- Output Validation
-
-## 12. Governance
-
-- Agent Governance
-- Permissions
-- Policies
-- Auditability
-- Human Oversight
-- Compliance
-- Safe Agent Execution
-
-## 13. Performance & Optimization
-
-- Token Optimization
-- Context Optimization
-- Model Selection
-- Caching Strategies
-- Parallel Tool Calling
-- Concurrency
-- Latency Optimization
-- Cost vs. Quality Trade-offs
-
-## 14. Production Agent Systems
-
-- Designing Production-ready Agents
-- Agent Architecture Trade-offs
-- Failure Recovery
-- Scalability
-- Reliability
-- Observability
-- Security
-- Evaluation
-- Cost Optimization
-- Continuous Improvement
+- [Agent Observability & Tracing (Langfuse & OpenTelemetry)](./08-evaluation-and-ops/01-observability-and-tracing.md)
+- [Step-Level vs. Trajectory Evaluations](./08-evaluation-and-ops/02-trajectory-evaluations.md)
+- [LLM-as-a-Judge & Automated Benchmark Datasets](./08-evaluation-and-ops/03-llm-as-a-judge-benchmarks.md)
+- [Cost & Latency Optimization (Cascading, Routing & Caching)](./08-evaluation-and-ops/04-cost-latency-optimization.md)
+- [Production Readiness Checklist & Deployment](./08-evaluation-and-ops/05-production-readiness.md)

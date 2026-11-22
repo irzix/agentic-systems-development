@@ -221,7 +221,7 @@ In the early days of LLMs (2023), every developer wrote custom glue code. Today,
 - **Function / Tool Calling:** Standardized schemas (JSON Schema) where the LLM outputs a structured JSON object specifying function name and arguments.
 - **Model Context Protocol (MCP):** An open standard created by Anthropic that allows agents to discover and connect to external environments (filesystems, GitHub, SQLite, Slack) through standardized servers.
 
-We will explore Tool Calling and MCP in depth in **Chapter 2**.
+We will explore Tool Calling and MCP in depth in **[Chapter 2: Tools & MCP](../02-tools-and-mcp/01-what-is-tool-call.md)**.
 
 ---
 

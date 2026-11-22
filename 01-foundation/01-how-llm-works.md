@@ -96,7 +96,7 @@ Tokens with similar semantic meanings end up closer to each other in this high-d
 $$\text{Token ID} \xrightarrow{\text{Embedding Matrix}} \vec{v} \in \mathbb{R}^{d_{\text{model}}}$$
 
 > [!NOTE]
-> Embeddings are also the foundation of **Vector Search** and **RAG (Retrieval-Augmented Generation)**, which we explore in Chapter 5.
+> Embeddings are also the foundation of **Vector Search** and **RAG (Retrieval-Augmented Generation)**, which we explore in [Chapter 4: Knowledge & RAG](../04-knowledge-and-rag/01-what-is-rag.md).
 
 ### C. The Transformer & Self-Attention
 Why can LLMs understand long sentences and pronouns? The secret is **Self-Attention** (introduced in *Attention Is All You Need*, 2017).

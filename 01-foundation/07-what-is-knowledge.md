@@ -87,7 +87,7 @@ Original Document (100 Pages)
 - **Semantic Chunking:** Splitting text along natural boundaries (markdown headers, paragraphs, or semantic topic shifts) so that closely related concepts remain intact.
 
 > [!TIP]
-> **The Golden Rule of Chunking:** A chunk should be large enough to contain complete context, but small enough to contain only one coherent topic. (We explore this deeply in [Chapter 5: RAG](../05-rag/02-chunking-strategies.md)).
+> **The Golden Rule of Chunking:** A chunk should be large enough to contain complete context, but small enough to contain only one coherent topic. (We explore this deeply in [Chapter 4: Knowledge & RAG](../04-knowledge-and-rag/02-chunking-strategies.md)).
 
 ---
 
@@ -220,4 +220,4 @@ print("Retrieved Knowledge Chunk:", results[0].page_content)
 2. **Chunk Before Ingestion:** Transform unwieldy documents into modular, semantically distinct chunks.
 3. **Cite Sources:** Ensure your agent quotes chunk metadata (e.g., file name, section, page number) so human users can audit answers.
 
-We explore retrieval strategies, reranking, and Hybrid Search in depth in **[Chapter 5: Knowledge & RAG](../05-rag/01-what-is-rag.md)**.
+We explore retrieval strategies, reranking, and Hybrid Search in depth in **[Chapter 4: Knowledge & RAG](../04-knowledge-and-rag/01-what-is-rag.md)**.

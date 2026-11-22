@@ -254,4 +254,4 @@ for mem in relevant_memories.get("results", []):
 2. **Namespace Everything:** Structure memories by user ID, organization ID, and project domain to prevent cross-tenant data leakage.
 3. **Handle Updates Gracefully:** Provide mechanisms for users to inspect, edit, or delete their stored memories (GDPR compliance and conflict resolution).
 
-We will explore advanced memory architectures (Semantic, Episodic, and Procedural memory) in depth in **Chapter 6**.
+We will explore advanced memory architectures (Semantic, Episodic, and Procedural memory) in depth in **[Chapter 5: Memory Systems](../05-memory-systems/01-short-term-vs-long-term-memory.md)**.
